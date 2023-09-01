@@ -50,7 +50,7 @@ def main():
 
     if st.button('Predict'):
         # Use the model to make predictions
-        prediction_text = 'The Patient has a Diabetes' if prediction[0] == 1 else 'The Patient has not a Diabetes'
+        prediction_text = 'The Patient has Diabetes' if prediction[0] == 1 else 'The Patient has not Diabetes'
         prediction_color = 'red' if prediction[0] == 1 else 'green'
         st.markdown('## Prediction Result')
         prediction_result = st.empty()
